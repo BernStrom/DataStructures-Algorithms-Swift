@@ -5,9 +5,12 @@ import UIKit
 
 func truncateString(str: String, num: Int) -> String {
     var truncatedStr = ""
+    let startPoint = str.index(str.startIndex, offsetBy: num)
+    let endPoint = str.endIndex
+    let setRange = startPoint..<endPoint
     
     if str.count > num {
-        truncatedStr = str.replacingCharacters(in: str.index(str.startIndex, offsetBy: num)..<str.endIndex, with: "...")
+        truncatedStr = str.replacingCharacters(in: setRange, with: "...")
     } else {
         return str
     }
