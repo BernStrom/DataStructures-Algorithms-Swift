@@ -21,20 +21,20 @@ func truncateString(str: String, num: Int) -> String {
 truncateString(str: "Peter Piper picked a peck of pickled peppers", num: 11)
 
 
-// Test Case 1
+// Test Case 1 - Passed ✅
 // truncateString("A-tisket a-tasket A green and yellow basket", 8) should return the string A-tisket... .
 
-// Test Case 2
+// Test Case 2 - Passed ✅
 // truncateString("Peter Piper picked a peck of pickled peppers", 11) should return the string Peter Piper... .
 
-// Test Case 3
+// Test Case 3 - Passed ✅
 // truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".count) should return the string A-tisket a-tasket A green and yellow basket.
 
-// Test Case 4
+// Test Case 4 - Passed ✅
 // truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length + 2) should return the string A-tisket a-tasket A green and yellow basket.
 
-// Test Case 5
+// Test Case 5 - Passed ✅
 // truncateString("A-", 1) should return the string A... .
 
-// Test Case 6
+// Test Case 6 - Passed ✅
 // truncateString("Absolutely Longer", 2) should return the string Ab... .
